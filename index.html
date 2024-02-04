@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="">
+            <img src="./img/logo.png" alt="">
+        </a>
+        <div class="navTitle">
+            <span>門市類型</span>
+            <span>門市資訊</span>
+            <span>其他服務</span>
+        </div>
+        <div class="navIcon">
+            <a href="">
+                <img src="./img/fb.png" alt="">
+            </a>
+            <a href="">
+                <img src="./img/line.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <!-- 輪播 -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/slid1.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slide2.jpeg" alt="">
+
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slide3.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {});
+    </script>
+
+</body>
+
+</html>
