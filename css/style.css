@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+.pc {
+  display: block !important;
+}
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+.mb {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .mb {
+    display: block !important;
+  }
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px;
+  background: rgba(204, 204, 204, 0.8);
+  -webkit-box-shadow: 0 3px 5px #ccc;
+          box-shadow: 0 3px 5px #ccc;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+nav .navTitle span {
+  margin: 0 15px;
+}
+nav .navIcon {
+  text-align: center;
+}
+nav .navIcon a {
+  text-decoration: none;
+}
+nav .navIcon a img {
+  width: 32px;
+  height: 32px;
+}
+@media screen and (max-width: 768px) {
+  nav .menu {
+    text-align: right;
+  }
+}
+
+.mySwiper img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-slide {
+  position: relative;
+}
+.swiper-slide .slideData {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.SlideH1Style, .SlidePStyle a {
+  font-size: 60px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.SlidePStyle a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */

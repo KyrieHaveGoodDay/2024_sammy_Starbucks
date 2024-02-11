@@ -7,21 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- 導覽列 -->
     <nav>
         <a href="">
             <img src="./img/logo.png" alt="">
         </a>
-        <div class="navTitle">
+        <div class="navTitle pc">
             <span>門市類型</span>
             <span>門市資訊</span>
             <span>其他服務</span>
         </div>
-        <div class="navIcon">
+        <div class="navIcon pc">
             <a href="">
                 <img src="./img/fb.png" alt="">
             </a>
@@ -29,21 +30,66 @@
                 <img src="./img/line.png" alt="">
             </a>
         </div>
+        <!-- 手機版的menu 圖案 -->
+        <div class="menu mb">
+            <img src="./img/menu.png" alt="">
+        </div>
     </nav>
 
     <!-- 輪播 -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./img/slid1.jpeg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/slide2.jpeg" alt="">
+            <!-- 1 -->
+            <div class="swiper-slide ">
+                <!-- 桌機版圖片 -->
+                <img class="pc" src="./img/slid1.jpeg" alt="">
+                <!-- 手機版圖片 -->
+                <img class="mb" src="./img/mb_slide1.jpeg" alt="">
 
+
+                <div class="slideData">
+                    <h1 class="SlideH1Style">最新消息</h1>
+                    <hr>
+                    <p class="SlidePStyle">
+                        <a href="">
+                            關於最新消息
+                        </a>
+                    </p>
+                </div>
             </div>
+            <!-- 2 -->
             <div class="swiper-slide">
-                <img src="./img/slide3.jpeg" alt="">
+                <!-- 桌機版圖片 -->
+                <img class="pc" src="./img/slid2.jpeg" alt="">
+                <!-- 手機版圖片 -->
+                <img class="mb" src="./img/mb_slide2.jpeg" alt="">
+                <div class="slideData">
+                    <h1 class="SlideH1Style">最新消息</h1>
+                    <hr>
+                    <p class="SlidePStyle">
+                        <a href="">
+                            關於最新消息
+                        </a>
+                    </p>
+                </div>
             </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+                <!-- 桌機版圖片 -->
+                <img class="pc" src="./img/3.jpeg" alt="">
+                <!-- 手機版圖片 -->
+                <img class="mb" src="./img/mb_slide3.jpeg" alt="">
+                <div class="slideData">
+                    <h1 class="SlideH1Style">最新消息</h1>
+                    <hr>
+                    <p class="SlidePStyle">
+                        <a href="">
+                            關於最新消息
+                        </a>
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -51,7 +97,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {});
+        var swiper = new Swiper(".mySwiper", {
+        });
     </script>
 
 </body>
