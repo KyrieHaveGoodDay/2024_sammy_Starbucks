@@ -63,6 +63,70 @@ nav .navIcon a img {
   }
 }
 
+.openMenu {
+  position: fixed;
+  right: -100%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(204, 204, 204, 0.7);
+  z-index: 50;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.openMenu .MenuData {
+  width: 75%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  right: -100%;
+  padding: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.openMenu .MenuData .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.openMenu .MenuData .MenuList {
+  margin-top: 20vw;
+}
+.openMenu .MenuData .MenuList div {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.openMenu .MenuData .MenuList div a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.openMenu .MenuData .MenuIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.RightStart {
+  right: 0% !important;
+}
+
+.RightBack {
+  right: -100% !important;
+}
+
+.pointNone {
+  pointer-events: none !important;
+}
+
 .mySwiper img {
   width: 100%;
   height: 100vh;

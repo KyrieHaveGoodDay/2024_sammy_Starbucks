@@ -32,3 +32,61 @@ nav {
         }
     }
 }
+
+// 手機版選單
+.openMenu {
+    position: fixed;
+    // 背景預設值
+    right: -100%;
+    opacity: 0;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(#ccc, 0.7);
+    z-index: 50;
+    transition: all 0.5s;
+    .MenuData {
+        width: 75%;
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        // 預設值
+        right: -100%;
+        padding: 20px;
+        transition: all 0.5s;
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .MenuList {
+            margin-top: 20vw;
+            div {
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 20px;
+                }
+            }
+        }
+        .MenuIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}
+
+.RightStart {
+    right: 0% !important;
+}
+.RightBack {
+    right: -100% !important;
+}
+.pointNone {
+    pointer-events: none !important;
+}
