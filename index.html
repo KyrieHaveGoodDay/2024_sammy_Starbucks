@@ -95,7 +95,7 @@
             <!-- 2 -->
             <div class="swiper-slide">
                 <!-- 桌機版圖片 -->
-                <img class="pc" src="./img/slid2.jpeg" alt="">
+                <img class="pc" src="./img/slide2.jpeg" alt="">
                 <!-- 手機版圖片 -->
                 <img class="mb" src="./img/mb_slide2.jpeg" alt="">
                 <div class="slideData">
@@ -111,7 +111,7 @@
             <!-- 3 -->
             <div class="swiper-slide">
                 <!-- 桌機版圖片 -->
-                <img class="pc" src="./img/3.jpeg" alt="">
+                <img class="pc" src="./img/slide3.jpeg" alt="">
                 <!-- 手機版圖片 -->
                 <img class="mb" src="./img/mb_slide3.jpeg" alt="">
                 <div class="slideData">
@@ -126,6 +126,52 @@
             </div>
 
         </div>
+        <!-- 箭頭 -->
+        <img class=" arrow left" src="./img/left.png" alt="">
+        <img class=" arrow right" src="./img/right.png" alt="">
+
+
+    </div>
+
+    <!-- 產品介紹 -->
+    <div class="product">
+
+        <div>
+            <div class="text">
+                <div class="title">可可柚香那堤</div>
+                <hr>
+                <p>醇厚溫潤的摩卡與蜂蜜紅柚的香氣結合，飲品上方再加上帶有焦糖榛果風味的鮮奶油，在品嘗間體會口中風味多層次的變化，餘韻中帶有柚香的清爽與巧克力融合的甘甜，以豐富的迷人滋味共同歡慶五百店的美好記憶。</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="pic">
+                <img src="./img/pd1.jpeg" alt="">
+            </div>
+        </div>
+
+        <div>
+            <div class="text">
+                <div class="title">雲朵冰搖濃縮咖啡</div>
+                <hr>
+                <p>創新的現煮義式飲品!滿足咖啡饕客的咖啡味蕾。綿滑香柔的雲朵(冰奶泡)是由低脂牛奶打製而成，倒入杯中後再添加手工搖製，濃郁香醇的冰搖濃縮咖啡，在冰鎮清爽的滋味中，品嘗兩者交織出的驚喜風味！</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="pic">
+                <img src="./img/pd2.jpeg" alt="">
+            </div>
+        </div>
+
+        <div>
+            <div class="text">
+                <div class="title">濃焦糖那堤</div>
+                <hr>
+                <p>焦糖和那堤咖啡愛好者無法抗拒的奢華享受。由深焦糖醬和蒸煮牛奶以及經典濃縮咖啡的組合，上方再加上鮮奶油與深焦糖醬。</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="pic">
+                <img src="./img/pd3.jpeg" alt="">
+            </div>
+        </div>
+
     </div>
 
 
@@ -133,6 +179,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".right",
+                prevEl: ".left",
+            },
         });
         // open
         $('#open').click(function () {

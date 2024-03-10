@@ -86,6 +86,7 @@ nav {
 }
 .RightBack {
     right: -100% !important;
+    transform: translateX();
 }
 .pointNone {
     pointer-events: none !important;

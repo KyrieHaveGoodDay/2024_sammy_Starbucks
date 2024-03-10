@@ -31,10 +31,19 @@
     }
 }
 
-// .slideimg {
-//     background-image: url("../../img/slid1.jpeg");
-//     background-size: cover;
-//     @media screen and (max-width: 768px) {
-//         background-image: url("../../img/mb_slide1.jpeg");
-//     }
-// }
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto !important;
+    height: auto !important;
+    z-index: 10;
+    cursor: pointer;
+    transform: rotate();
+}
+.left {
+    left: 10px;
+}
+.right {
+    right: 10px;
+}
