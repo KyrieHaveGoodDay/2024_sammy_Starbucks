@@ -21,3 +21,32 @@
 @import "page/nav"; // 導覽列
 @import "page/swiper"; // 輪播
 @import "page/product"; // 產品
+@import "page/brand"; // 品牌
+
+footer {
+    background: #eee;
+    padding: 100px 0;
+    text-align: center;
+    margin-top: 100px;
+    @media screen and(max-width:900px) {
+        padding: 10vw 5vw;
+        margin-top: 5vw;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    .contact {
+        color: #15733a;
+        margin: 20px 0;
+    }
+    .copyright {
+        color: #aaa;
+    }
+}
+.br900 {
+    display: none;
+    @media screen and(max-width:900px) {
+        display: block;
+    }
+}

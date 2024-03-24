@@ -1,0 +1,33 @@
+.brand {
+    display: grid;
+    // 1/3
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 15px 70px;
+    text-align: center;
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        padding: 15px 5vw;
+    }
+    > div img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    h3 {
+        padding: 20px 0;
+        font-size: 24px;
+    }
+    hr,
+    p {
+        margin-bottom: 20px;
+    }
+    p {
+        letter-spacing: 1px;
+    }
+    a {
+        @extend .moreStyle;
+    }
+}
